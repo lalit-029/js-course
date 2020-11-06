@@ -24,3 +24,39 @@ button{
     border-radius: 4px;
     text-transform: uppercase;
 }
+.add{
+    background-color: green !important;
+    color: #fff !important;
+}
+.sub{
+    background-color: red !important;
+    color: #fff !important;
+}
+.mul{
+    background-color: blue !important;
+    color: #fff !important;
+}
+.div{
+    background-color: violet !important;
+    color: #fff !important;
+}
+.doubles{
+    background-color: pink !important;
+    color: #fff !important;
+}
+.rem{
+    background-color: orange !important;
+    color: #fff !important;
+}
+.concat{
+    background-color: orchid !important;
+    color: #fff !important;
+}
+.swap{
+    background-color: maroon !important;
+    color: #fff !important;
+}
+.reset{
+    background-color: olive !important;
+    color: #fff !important;
+}
