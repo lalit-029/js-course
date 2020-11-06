@@ -27,6 +27,12 @@ function reset(){
     document.getElementsByClassName('reset-class')[1].value = '';
     document.getElementsByClassName('reset-class')[2].value = '';
 }
+function concat(){
+    var a,b;
+    a = document.getElementById('input1').value;
+    b = document.getElementById('input2').value;
+    document.getElementById('result').value = `${a}${b}`; 
+}
 function swap(){
     var a,b;
     a = Number(document.getElementById('input1').value);
