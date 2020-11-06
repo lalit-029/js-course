@@ -27,3 +27,12 @@ function reset(){
     document.getElementsByClassName('reset-class')[1].value = '';
     document.getElementsByClassName('reset-class')[2].value = '';
 }
+function swap(){
+    var a,b;
+    a = Number(document.getElementById('input1').value);
+    b = Number(document.getElementById('input2').value);
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+    document.getElementById('result').value = `${a},${b}`; 
+}
