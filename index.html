@@ -37,6 +37,8 @@
     <p>a=-5; b=-2; c=-6; d= 0; e= 5; = <span id="Largest"></span></p>
     <h3>Find largest of 5 nos using if else in a array</h3>
     <p>A = [0, 2, -100, -1, -10]; = <span id="LargestArray"></span></p>
+    <h3>Sum of array elements</h3>
+    <p>B = [0, 2, 100, 1, 10]; = <span id="SumArray"></span></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -74,5 +76,12 @@
     }else{
         document.getElementById('Largest').innerHTML = e;
     }
+    // sum of no. in a array
+    var B = [0, 2, 100, 1, 10];
+    var sum = 0;
+    for(i=0; i<B.length; i += 1){
+        sum = sum + B[i];
+    }
+    document.getElementById('SumArray').innerHTML = sum;
 </script>
 </html>
