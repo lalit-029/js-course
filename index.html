@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>  
 </head>
 <body>
@@ -22,17 +23,56 @@
             <input type="text" class="reset-class" id="result">
         </div>
     </form>
-    <button class="add" onclick="addition()">addition</button>
-    <button class="sub" onclick="subtract()">subtract</button>
-    <button class="mul" onclick="multiply()">multiply</button>
-    <button class="div" onclick="divide()">divide</button>
-    <button class="doubles" onclick="doubles()">doubles</button>
-    <button class="rem" onclick="reminder()">reminder</button>
-    <button class="concat" onclick="concat()">concat</button>
-    <button class="swap" onclick="swap()">swap</button>
-    <button class="reset" onclick="reset()">reset</button>
+    <button class="add" id="add" onclick="addition()">addition</button>
+    <button class="sub" id="sub" onclick="subtract()">subtract</button>
+    <button class="mul" id="mul" onclick="multiply()">multiply</button>
+    <button class="div" id="div" onclick="divide()">divide</button>
+    <button class="doubles" id="doubles" onclick="doubles()">doubles</button>
+    <button class="rem" id="rem" onclick="reminder()">reminder</button>
+    <button class="concat" id="concat" onclick="concat()">concat</button>
+    <button class="swap" id="swap" onclick="swap()">swap</button>
+    <button class="reset" id="reset" onclick="reset()">reset</button>
+    <button class="reset" id="reset" onclick="evenodd()">Even-odd</button>
+    <h3>FInd largest of 5 nos using if else</h3>
+    <p>a=-5; b=-2; c=-6; d= 0; e= 5; = <span id="Largest"></span></p>
+    <h3>Find largest of 5 nos using if else in a array</h3>
+    <p>A = [0, 2, -100, -1, -10]; = <span id="LargestArray"></span></p>
 </body>
 <script>
-
+    // FInd largest of 5 nos using if else in a array
+    var A = [0, 2, -100, -1, -10];
+    if (A[0]>A[1] && A[0]>A[2] && A[0]>A[3] && A[0]>A[4]){
+        document.getElementById('LargestArray').innerHTML = A[0];
+    }
+    else if (A[1]>A[0] && A[1]>A[2] && A[1]>A[3] && A[1]>A[4]){
+        document.getElementById('LargestArray').innerHTML = A[1];
+    }
+    else if (A[2]>A[0] && A[2]>A[1] && A[2]>A[3] && A[2]>A[4]){
+        document.getElementById('LargestArray').innerHTML = A[2];
+    }
+    else if (A[3]>A[0] && A[3]>A[2] && A[3]>A[1] && A[3]>A[4]){
+        document.getElementById('LargestArray').innerHTML = A[3];
+    }
+    else{
+        document.getElementById('LargestArray').innerHTML = A[4];
+    }
+    // FInd largest of 5 nos using if else
+    var a,b,c,d,f;
+    a=-5;
+    b=-2;
+    c=-6;
+    d= 0;
+    e= 5;
+    if (a>b && a>c && a>d && a>e){
+        document.getElementById('Largest').innerHTML = a;
+    }else if (b>a && b>c && b>d && b>e){
+        document.getElementById('Largest').innerHTML = b;
+    }else if (c>a && c>b && c>d && c>e){
+        document.getElementById('Largest').innerHTML = c;
+    }else if (d>a && d>c && d>b && d>e){
+        document.getElementById('Largest').innerHTML = d;
+    }else{
+        document.getElementById('Largest').innerHTML = e;
+    }
 </script>
 </html>

@@ -60,3 +60,8 @@ button{
     background-color: olive !important;
     color: #fff !important;
 }
+p span{
+    font-size: 20px;
+    font-weight: 600;
+    color: green;
+}
