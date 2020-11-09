@@ -42,6 +42,8 @@
     <h3>Max and Min array </h3>
     <p>C = [2, 5, 1, 10, 9] = max. number is <span id="max"></span></p>
     <p>C = [2, 5, 1, 10, 9] = min. number is <span id="min"></span></p>
+    <h3>Sum of n no.</h3>
+    <p>n is 10 = sum is <span id="sumn"></span></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -102,5 +104,11 @@
         }
     }
     document.getElementById('min').innerHTML = min;
+    // sum of n no.
+    let sumn = 0;
+    for(let i = 1; i <= 10; i++) {
+        sumn = sumn + i;
+    }
+    document.getElementById('sumn').innerHTML = sumn;
 </script>
 </html>
