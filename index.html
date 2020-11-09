@@ -39,6 +39,9 @@
     <p>A = [0, 2, -100, -1, -10]; = <span id="LargestArray"></span></p>
     <h3>Sum of array elements</h3>
     <p>B = [0, 2, 100, 1, 10]; = <span id="SumArray"></span></p>
+    <h3>Max and Min array </h3>
+    <p>C = [2, 5, 1, 10, 9] = max. number is <span id="max"></span></p>
+    <p>C = [2, 5, 1, 10, 9] = min. number is <span id="min"></span></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -83,5 +86,21 @@
         sum = sum + B[i];
     }
     document.getElementById('SumArray').innerHTML = sum;
+    //max and min in array
+    C = [2,5,1,10,9];
+    max = C[0];
+    min = C[0];
+    for(var i = 0; i < C.length; i++){
+        if(C[i] > max){
+            max= C[i];
+        }
+    }
+    document.getElementById('max').innerHTML = max;
+    for(var i = 0; i < C.length; i++){
+        if(C[i] < min){
+            min= C[i];
+        }
+    }
+    document.getElementById('min').innerHTML = min;
 </script>
 </html>
