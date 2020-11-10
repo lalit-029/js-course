@@ -44,6 +44,9 @@
     <p>C = [2, 5, 1, 10, 9] = min. number is <span id="min"></span></p>
     <h3>Sum of n no.</h3>
     <p>n is 10 = sum is <span id="sumn"></span></p>
+    <h3>Sum of even no.</h3>
+    <p>1 to 50 = sum is <span id="evensum"></span></p>
+    <p>1 to 50 = sum is <span id="oddsum"></span></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -110,5 +113,18 @@
         sumn = sumn + i;
     }
     document.getElementById('sumn').innerHTML = sumn;
+    // sum of even/odd 
+    var evensum = 0;
+    var oddsum = 0;
+    for(var i = 0; i< 51; i++) {
+        if(i % 2 == 0) {
+            evensum = evensum + i;
+        }
+        else{
+            oddsum = oddsum + i;
+        }
+    }
+    document.getElementById('evensum').innerHTML = evensum;
+    document.getElementById('oddsum').innerHTML = oddsum;
 </script>
 </html>
