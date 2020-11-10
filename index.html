@@ -55,6 +55,7 @@
     <p>10! is = <span id="factorial"></span></p>
     <h3>Merge 3 array</h3>
     <p>C = [10, 11, 12]; B = [7, 8, 9]; A = [1, 2, 3, 4, 5, 6];<span id="concatArray"></span></p>
+    <section></section>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -162,5 +163,24 @@
     // spread operator
     var concatArray = [...A, ...B, ...C];
     document.getElementById('concatArray').innerHTML= concatArray;
+    // Create orderd list using array
+    function makeList() {
+        let listData = ['Blue','Red','White','Green','Black','Orange'],
+            listContainer = document.createElement('div'),
+            listElement = document.createElement('ul'),
+            numberOfListItems = listData.length,
+            listItem,
+            i;
+        document.getElementsByTagName('body')[0].appendChild(listContainer);
+        listContainer.appendChild(listElement);
+        for (i = 0; i < numberOfListItems; ++i) {
+            listItem = document.createElement('li');
+            listItem.innerHTML = listData[i];
+            listElement.appendChild(listItem);
+        }
+    }
+
+    // Usage
+    makeList();
 </script>
 </html>
