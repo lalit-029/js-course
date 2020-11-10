@@ -44,9 +44,11 @@
     <p>C = [2, 5, 1, 10, 9] = min. number is <span id="min"></span></p>
     <h3>Sum of n no.</h3>
     <p>n is 10 = sum is <span id="sumn"></span></p>
-    <h3>Sum of even no.</h3>
+    <h3>Sum of even/odd no.</h3>
     <p>1 to 50 = sum is <span id="evensum"></span></p>
     <p>1 to 50 = sum is <span id="oddsum"></span></p>
+    <h3>Reverse of an array</h3>
+    <p>D = [10, 30, 40, 2] Dreverse will be<span id="Dreverse"></span></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -126,5 +128,10 @@
     }
     document.getElementById('evensum').innerHTML = evensum;
     document.getElementById('oddsum').innerHTML = oddsum;
+    // reverse of an array
+    var d = [10, 30, 40, 2]
+    for(var i=d.length-1; i>=0; i--){
+        console.log(d[i]);
+    }
 </script>
 </html>
