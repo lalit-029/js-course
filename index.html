@@ -51,6 +51,8 @@
     <p>D = [10, 30, 40, 2] check in console</p>
     <h3>LCM of two no.</h3>
     <p>16,30 is = <span id="LCM"></span></p>
+    <h3>factorial of a no.</h3>
+    <p>10! is = <span id="factorial"></span></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -144,5 +146,12 @@
         }
     }
     document.getElementById('LCM').innerHTML= i;
+    // factorial of a no.
+    var factnum = 10;
+    var factorial = 1;
+    for(var i = factnum; i>=1; i--){
+        factorial = factorial * i;
+    }
+    document.getElementById('factorial').innerHTML= factorial;
 </script>
 </html>
