@@ -48,7 +48,9 @@
     <p>1 to 50 = sum is <span id="evensum"></span></p>
     <p>1 to 50 = sum is <span id="oddsum"></span></p>
     <h3>Reverse of an array</h3>
-    <p>D = [10, 30, 40, 2] Dreverse will be<span id="Dreverse"></span></p>
+    <p>D = [10, 30, 40, 2] check in console</p>
+    <h3>LCM of two no.</h3>
+    <p>16,30 is = <span id="LCM"></span></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -133,5 +135,14 @@
     for(var i=d.length-1; i>=0; i--){
         console.log(d[i]);
     }
+    // LCM of two no.
+    var e = 16;
+    var f = 30;
+    for (var i = 1; i<=e*f; i++){
+        if(i%e == 0 && i%f == 0){
+            break;
+        }
+    }
+    document.getElementById('LCM').innerHTML= i;
 </script>
 </html>
