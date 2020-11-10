@@ -163,6 +163,22 @@
     // spread operator
     var concatArray = [...A, ...B, ...C];
     document.getElementById('concatArray').innerHTML= concatArray;
+    // List the alternate no in arrays and then add them
+    function alternateList() {
+        let listData = [2, 20, 5, 66, 5, 98, 4, 6],
+            listContainer = document.createElement('div'),
+            listElement = document.createElement('ul'),
+            listItem,
+            i;
+        document.getElementsByTagName('body')[0].appendChild(listContainer);
+        listContainer.appendChild(listElement);
+        for (i = 0; i < listData.length; i+=2) {
+            listItem = document.createElement('li');
+            listItem.innerHTML = listData[i];
+            listElement.appendChild(listItem);
+        }
+    }
+    alternateList();
     // Create orderd list using array
     function makeList() {
         let listData = ['Blue','Red','White','Green','Black','Orange'],
@@ -179,8 +195,12 @@
             listElement.appendChild(listItem);
         }
     }
-
-    // Usage
     makeList();
+    // Create orderd list with upto 10 users and print the names of users in <li>
+    function tenusers() {
+        let users = [{name: 'tarun', salary: '2000'},{name: 'lalit', salary: '5000'}, {name: 'sahil', salary: '4000'}, 
+        {name: 'rajan', salary: '3500'}, {name: 'sumit', salary: '1000'}, {name: 'deepak', salary: '10000'}, {name: 'rajesh', salary: '6500'},
+        {name: 'prash', salary: '2500'}, {name: 'tarun', salary: '5500'}, {name: 'tarun', salary: '9000'}]   
+    }
 </script>
 </html>
