@@ -213,7 +213,7 @@
         listContainer.appendChild(listElement);
         for (i = 0; i < numberOfListItems; ++i) {
             listItem = document.createElement('li');
-            listItem.innerHTML = users[i];
+            listItem.innerHTML = users[i].name;
             listElement.appendChild(listItem);
         }   
     }
