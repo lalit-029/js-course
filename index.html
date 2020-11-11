@@ -59,6 +59,13 @@
     <p><span id="alternatesum"></span></p>
     <h3>Avg salary</h3>
     <p><span id="avgsalary"></span></p>
+    <h3>List the content ins  all li of a ul</h3>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -241,5 +248,13 @@
         document.getElementById('avgsalary').innerHTML = avgsalary;  
     }
     avgsalary();
+    // List the content ins  all <li> of a <ul>
+    var ul = document.getElementsByTagName('ul');
+    var li = ul[0].getElementsByTagName('li');
+    var array = new Array();
+    for (var i = 0; i < li.length; i++) {
+        array.push(li[i].innerText)
+    }
+    alert(array);
 </script>
 </html>
