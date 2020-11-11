@@ -66,6 +66,8 @@
         <li>C</li>
         <li>D</li>
     </ul>
+    <h3>Deleting the item (4) from array A</h3>
+    <p id="dlt" ></p>
 </body>
 <script>
     // FInd largest of 5 nos using if else in a array
@@ -284,5 +286,10 @@
         min=max;
     }
     console.log(arr2);
+
+    var index = A.indexOf(4)
+    console.log(A)
+    A.splice(index, 1)
+    $("#dlt").html(A.join())
 </script>
 </html>
