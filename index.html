@@ -361,5 +361,35 @@
     var one_day=1000*60*60*24;
     console.log(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
     " days left until Christmas!");
+    // sum and product of an array
+    var array = [1, 2, 3, 4, 5, 6],
+    s = 0,p = 1,i;
+    for (i = 0; i < array.length; i += 1) {
+        s += array[i];
+        p *= array[i];
+    }
+    console.log('Sum : '+s + ' Product :  ' +p); 
+    // leap year
+    function leap_year_range(st_year, end_year) {
+        var year_range = [];
+        for (var i = st_year; i <= end_year; i++){
+             year_range.push(i);
+        }
+        var new_array = [];
+        year_range.forEach(
+        function(year){ 
+            if (test_LeapYear(year)) 
+            new_array.push(year);
+        });
+        return new_array;
+    }
+    function test_LeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+            return year;
+        } else {
+            return false;
+        }
+    }
+    console.log(leap_year_range(2000,2012));
 </script>
 </html>
