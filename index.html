@@ -286,10 +286,15 @@
         min=max;
     }
     console.log(arr2);
-
+    // Deletion of an element in an array
     var index = A.indexOf(4)
     console.log(A)
     A.splice(index, 1)
     $("#dlt").html(A.join())
+    // print the content on the current window
+    function print_current_page()
+    {
+        window.print();
+    }
 </script>
 </html>
